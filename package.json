@@ -1,0 +1,18 @@
+{
+  "name": "entry-manifest-webpack-plugin",
+  "version": "0.0.1",
+  "description": "Allows exporting a manifest that maps entry chunk names to their output files, instead of keeping the mapping inside the webpack bootstrap.",
+  "main": "lib/EntryManifestPlugin.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": {
+    "name": "Jason Anderson",
+    "email": "diurnalist@gmail.com",
+    "url": "http://diurnal.st"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "webpack-core": "^0.4.8"
+  }
+}
