@@ -14,5 +14,8 @@
   "license": "MIT",
   "dependencies": {
     "webpack-core": "^0.4.8"
+  },
+  "peerDependencies": {
+    "webpack": "^1.4.0-beta6"
   }
 }
