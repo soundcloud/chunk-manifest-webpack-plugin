@@ -1,8 +1,8 @@
 {
-  "name": "entry-manifest-webpack-plugin",
+  "name": "chunk-manifest-webpack-plugin",
   "version": "0.0.1",
-  "description": "Allows exporting a manifest that maps entry chunk names to their output files, instead of keeping the mapping inside the webpack bootstrap.",
-  "main": "lib/EntryManifestPlugin.js",
+  "description": "Allows exporting a manifest that maps chunk ids to their output files, instead of keeping the mapping inside the webpack bootstrap.",
+  "main": "lib/ChunkManifestPlugin.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
