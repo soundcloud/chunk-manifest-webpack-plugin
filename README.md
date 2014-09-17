@@ -1,25 +1,25 @@
-# entry-manifest-webpack-plugin
+# chunk-manifest-webpack-plugin
 
-Allows exporting a JSON file that maps entry resource names to their resulting asset files. Webpack can then read this mapping (assuming it is provided to webpack somehow on the client) from here instead of storing the mapping in its bootstrap, which allows to actually leverage long-term caching of the bootstrap file.
+Allows exporting a JSON file that maps chunk ids to their resulting asset files. Webpack can then read this mapping, assuming it is provided somehow on the client, instead of storing a mapping (with chunk asset hashes) in the bootstrap script, which allows to actually leverage long-term caching.
 
 ## Usage
 
 Install via npm:
 
 ```shell
-npm install entry-manifest-webpack-plugin
+npm install chunk-manifest-webpack-plugin
 ```
 
 And then require and provide to webpack:
 
 ```javascript
 // in webpack.config.js or similar
-var EntryManifestPlugin = require('entry-manifest-webpack-plugin');
+var ChunkManifestPlugin = require('chunk-manifest-webpack-plugin');
 
 module.exports = {
   // your config values here
   plugins: [
-    new EntryManifestPlugin({
+    new ChunkManifestPlugin({
       filename: "manifest.json",
       manifestVariable: "webpackManifest"
     })
@@ -35,4 +35,4 @@ Where the manifest will be exported to on bundle compilation. This will be relat
 
 #### `manifestVariable`
 
-What JS variable on the client webpack should refer to when requiring entry chunks. Default = `"webpackManifest"`
+What JS variable on the client webpack should refer to when requiring chunks. Default = `"webpackManifest"`
