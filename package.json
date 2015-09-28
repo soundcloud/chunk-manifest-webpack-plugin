@@ -17,5 +17,6 @@
   },
   "peerDependencies": {
     "webpack": "^1.4.0-beta6"
-  }
+  },
+  "repository": "https://github.com/diurnalist/chunk-manifest-webpack-plugin"
 }
