@@ -10,6 +10,12 @@ Install via npm:
 npm install chunk-manifest-webpack-plugin
 ```
 
+Install via yarn:
+
+```shell
+yarn add chunk-manifest-webpack-plugin
+```
+
 And then require and provide to webpack:
 
 ```javascript
