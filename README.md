@@ -7,13 +7,13 @@ Allows exporting a JSON file that maps chunk ids to their resulting asset files.
 Install via npm:
 
 ```shell
-npm install chunk-manifest-webpack-plugin
+npm install --save-dev chunk-manifest-webpack-plugin
 ```
 
 Install via yarn:
 
 ```shell
-yarn add chunk-manifest-webpack-plugin
+yarn add --dev chunk-manifest-webpack-plugin
 ```
 
 And then require and provide to webpack:
