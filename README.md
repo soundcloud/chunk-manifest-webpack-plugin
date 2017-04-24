@@ -20,14 +20,14 @@ And then require and provide to webpack:
 
 ```javascript
 // in webpack.config.js or similar
-var ChunkManifestPlugin = require('chunk-manifest-webpack-plugin');
+const ChunkManifestPlugin = require('chunk-manifest-webpack-plugin');
 
 module.exports = {
   // your config values here
   plugins: [
     new ChunkManifestPlugin({
-      filename: "manifest.json",
-      manifestVariable: "webpackManifest",
+      filename: 'manifest.json',
+      manifestVariable: 'webpackManifest',
       inlineManifest: false
     })
   ]
