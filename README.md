@@ -27,7 +27,8 @@ module.exports = {
   plugins: [
     new ChunkManifestPlugin({
       filename: 'manifest.json',
-      manifestVariable: 'webpackManifest'
+      manifestVariable: 'webpackManifest',
+      inlineManifest: false
     })
   ]
 };
@@ -42,3 +43,15 @@ Where the manifest will be exported to on bundle compilation. This will be relat
 #### `manifestVariable`
 
 What JS variable on the client webpack should refer to when requiring chunks. Default = `"webpackManifest"`
+
+#### `inlineManifest`
+
+Whether or not to write the manifest output into the [html-webpack-plugin](https://github.com/ampedandwired/html-webpack-plugin). Default = `false`
+
+```html
+// index.ejs
+<body>
+    <!-- app -->
+    <%= htmlWebpackPlugin.files.webpackManifest %>
+</body>
+```
