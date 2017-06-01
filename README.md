@@ -46,7 +46,7 @@ What JS variable on the client webpack should refer to when requiring chunks. De
 
 #### `inlineManifest`
 
-Whether or not to write the manifest output into the [html-webpack-plugin](https://github.com/ampedandwired/html-webpack-plugin). Default = `false`
+Whether or not to write the manifest output into the [html-webpack-plugin](https://github.com/ampedandwired/html-webpack-plugin) as well as prepend the global window object as `window.{manifestVariable} =` to the emitted file. Default = `false`
 
 ```html
 // index.ejs
