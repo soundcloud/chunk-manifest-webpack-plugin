@@ -55,3 +55,7 @@ Whether or not to write the manifest output into the [html-webpack-plugin](https
     <%= htmlWebpackPlugin.files.webpackManifest %>
 </body>
 ```
+
+### Note
+
+* Webpack configurations that set `watch: true` won't generate a file and will cause this plugin to silently fail. This includes both `webpack-dev-server` and `webpack-dev-middleware`.
