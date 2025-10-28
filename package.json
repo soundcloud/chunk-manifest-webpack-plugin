@@ -16,12 +16,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/soundcloud/chunk-manifest-webpack-plugin.git"
   },
   "bugs": {
-    "url": "https://github.com/soundcloud/chunk-manifest-webpack-plugin/issues"
   },
-  "homepage": "https://github.com/soundcloud/chunk-manifest-webpack-plugin#readme",
   "devDependencies": {},
   "keywords": [
     "webpack",
