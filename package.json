@@ -9,10 +9,10 @@
   "author": "Jason Anderson <diurnalist@gmail.com> (http://diurnal.st)",
   "license": "MIT",
   "dependencies": {
-    "webpack-core": "^0.6.9"
+    "webpack-core": "0.6.9"
   },
   "peerDependencies": {
-    "webpack": "^2.0.0 || ^3.0.0"
+    "webpack": "3.12.0"
   },
   "repository": {
     "type": "git",
